@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {browseForExternalEditor = id; externalEditorChanged = id; }; 
+            CLASS = PrefController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {externalEditorPopUpButton = NSPopUpButton; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

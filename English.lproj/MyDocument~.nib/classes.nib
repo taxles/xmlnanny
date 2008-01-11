@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {CLASS = BorderView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                browse = id; 
+                clear = id; 
+                openLocation = id; 
+                parameterWasChanged = id; 
+                parse = id; 
+                validationTypeWasChanged = id; 
+            }; 
+            CLASS = MyController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bottomView = NSView; 
+                parseResultsWebView = WebView; 
+                parsingService = id; 
+                schemaURLComboBox = NSComboBox; 
+                sourceURLComboBox = NSComboBox; 
+                sourceXMLScrollView = NSScrollView; 
+                sourceXMLTextView = NSTextView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

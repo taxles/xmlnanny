@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {
+            CLASS = CatalogController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                catalogItemTypeMenu = NSMenu; 
+                catalogService = id; 
+                catalogTable = NSTableView; 
+                catalogXMLTextView = NSTextView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = CatalogItem; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
