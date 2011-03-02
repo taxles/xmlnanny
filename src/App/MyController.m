@@ -987,20 +987,20 @@ typedef enum {
 #pragma mark -
 #pragma mark NSSplitViewDelegate
 
-- (float)splitView:(NSSplitView *)sender constrainMaxCoordinate:(float)proposedMax ofSubviewAt:(int)offset;
+- (CGFloat)splitView:(NSSplitView *)sv constrainMaxCoordinate:(CGFloat)proposedMax ofSubviewAt:(NSInteger)offset;
 {
-	if (offset == 0) {
+	if (0 == offset) {
 		NSRect r = [[self window] frame];
-		return r.size.height - 130;
+		return r.size.height - 10.0;
 	}
 	return proposedMax;
 }
 
 
-- (float)splitView:(NSSplitView *)sender constrainMinCoordinate:(float)proposedMin ofSubviewAt:(int)offset;
+- (CGFloat)splitView:(NSSplitView *)sv constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset;
 {
-	if (offset == 0) {
-		return 20;
+	if (0 == offset) {
+		return 20.0;
 	}
 	return proposedMin;
 }
