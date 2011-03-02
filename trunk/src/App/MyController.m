@@ -292,7 +292,7 @@ typedef enum {
 	
 	switch(type) {
 		case XMLValidationTypeDTD:
-			str = @"Internally referenced DTD";
+			str = NSLocalizedString(@"Auto-detect DTD", @"");
 			break;
 		case XMLValidationTypeXSD:
 		case XMLValidationTypeRNG:
@@ -321,7 +321,7 @@ typedef enum {
 {
 	@synchronized (self) {
 		if (!contextMenuItems) {
-			NSMenuItem *item = [[[NSMenuItem alloc] initWithTitle:@"Clear"
+			NSMenuItem *item = [[[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Clear", @"")
 														   action:@selector(clear:)
 													keyEquivalent:@""] autorelease];
 			NSArray *a = [NSArray arrayWithObject:item];
@@ -532,7 +532,7 @@ typedef enum {
 - (void)selectTextInBBEditFile:(NSString *)filename line:(int)line;
 {
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"openBBEditDocAtLine" ofType:@"txt"];
-	NSString *format = [NSString stringWithContentsOfFile:path];
+	NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 	NSString *source = [NSString stringWithFormat:format, filename, line];
 	
 	NSAppleScript *script = [[NSAppleScript alloc] initWithSource:source];
@@ -544,7 +544,7 @@ typedef enum {
 - (void)selectTextInSubEthaEditFile:(NSString *)filename line:(int)line;
 {
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"openSubEthaEditDocAtLine" ofType:@"txt"];
-	NSString *format = [NSString stringWithContentsOfFile:path];
+	NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 	NSString *source = [NSString stringWithFormat:format, filename, line];
 	
 	NSAppleScript *script = [[NSAppleScript alloc] initWithSource:source];
@@ -903,7 +903,7 @@ typedef enum {
 }
 
 
-- (unsigned)webView:(WebView *)sender dragDestinationActionMaskForDraggingInfo:(id <NSDraggingInfo>)draggingInfo 
+- (NSUInteger)webView:(WebView *)sender dragDestinationActionMaskForDraggingInfo:(id <NSDraggingInfo>)draggingInfo 
 {
 	return WebDragDestinationActionLoad;
 }
@@ -912,8 +912,8 @@ typedef enum {
 - (void)webView:(WebView *)sender willPerformDragDestinationAction:(WebDragDestinationAction)action forDraggingInfo:(id <NSDraggingInfo>)draggingInfo 
 {
 	NSPasteboard *pboard = [draggingInfo draggingPasteboard];
-	int index;
-	if ((index = [[pboard types] indexOfObject:NSFilenamesPboardType]) != NSNotFound) {
+	NSUInteger index = [[pboard types] indexOfObject:NSFilenamesPboardType];
+	if (NSNotFound != index) {
 		NSString *filename = [[pboard propertyListForType:NSFilenamesPboardType] objectAtIndex:0];
 		[command setSchemaURLString:filename];
 		[self clear:self];
@@ -959,7 +959,7 @@ typedef enum {
 	}
 
 
-- (unsigned int)comboBox:(NSComboBox *)aComboBox indexOfItemWithStringValue:(NSString *)aString
+- (NSUInteger)comboBox:(NSComboBox *)aComboBox indexOfItemWithStringValue:(NSString *)aString
 {
 	NSEnumerator *e = [recentSchemaURLStrings objectEnumerator];
 	NSString *str = nil;
