@@ -465,7 +465,7 @@ static void myStructuredErrorAdapter(id self, xmlErrorPtr err)
 			// is non-null, it's id == 0 || > 1000000
 			//NSLog(@"input->id: %d", input->id);
 			
-			const char *filename;
+			const char *filename = NULL;
             if (input->filename)
 				filename = input->filename;
             else if ((line != 0) && (domain == XML_FROM_PARSER))
@@ -485,7 +485,7 @@ static void myStructuredErrorAdapter(id self, xmlErrorPtr err)
         }
     } else {
 
-		const char *filename;
+		const char *filename = NULL;
 		if (file != NULL)
             filename = file;
         else if ((line != 0) && (domain == XML_FROM_PARSER))
