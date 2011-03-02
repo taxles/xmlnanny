@@ -32,7 +32,9 @@
 	
 	NSDate *start = [NSDate date];
 	
-	docPtr = xmlReadFile([sourceURLString UTF8String], NULL, [self optionsForCommand:command]);
+	int opts = [self optionsForCommand:command];
+    
+	docPtr = xmlReadFile([sourceURLString UTF8String], NULL, opts);
 	//docPtr = xmlReadMemory([sourceXMLData bytes], 
 	//					   [sourceXMLData length], 
 	//					   [sourceURLString UTF8String],
