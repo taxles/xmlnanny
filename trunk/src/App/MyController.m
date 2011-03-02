@@ -663,7 +663,7 @@ typedef enum {
 	NSString *filename = [[command sourceURLString] lastPathComponent];
 	
 	BOOL checkedValidity = (XMLValidationTypeNone != [command validationType]);
-	NSString *result = (checkedValidity ? @"valid" : @"well-formed");
+	NSString *result = (checkedValidity ? NSLocalizedString(@"valid", @"") : NSLocalizedString(@"well-formed", @""));
 
 	NSString *attrVal = [NSString stringWithFormat:@"errorItemClicked(%d, '%@')", 0, [command sourceURLString]];
 	NSDictionary *attrs = [NSDictionary dictionaryWithObject:attrVal forKey:@"onclick"];
