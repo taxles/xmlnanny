@@ -1,0 +1,4 @@
+tell application "BBEdit"
+	activate
+	open {POSIX file "%@"} with LF translation
+end tell
