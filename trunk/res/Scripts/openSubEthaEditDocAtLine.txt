@@ -1,0 +1,5 @@
+tell application "SubEthaEdit"
+	activate
+	open {file "%@"}
+	set selection to paragraph %d of front document
+end tell
