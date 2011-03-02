@@ -27,7 +27,7 @@ static void myGenericErrorAdapter(id self, const char *str, ...)
 	NSString *format = [NSString stringWithUTF8String:str];
 	NSString *msg = [[[NSString alloc] initWithFormat:format arguments:vargs] autorelease];
 	
-	NSLog(msg);
+	NSLog(@"%@", msg);
 	
 	va_end(vargs);
 }

@@ -1,4 +1,4 @@
-x//
+//
 //  XMLCatalogServiceLibxmlImpl.m
 //  XMLNanny
 //
@@ -127,7 +127,7 @@ static const char * const typeNames[] = {
 	
 	if (f) {
 		xmlCatalogDump(f);		
-		XMLString = [NSString stringWithContentsOfFile:path];
+		XMLString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 	}
 	
 	xmlLoadCatalog([path UTF8String]);
