@@ -248,6 +248,24 @@ typedef enum {
 }
 
 
+- (IBAction)makeTextActualSize:(id)sender;
+{
+    [parseResultsWebView makeTextStandardSize:sender];
+}
+
+
+- (IBAction)makeTextBigger:(id)sender;
+{
+    [parseResultsWebView makeTextLarger:sender];
+}
+
+
+- (IBAction)makeTextSmaller:(id)sender;
+{
+    [parseResultsWebView makeTextSmaller:sender];
+}
+
+
 #pragma mark -
 #pragma mark Private
 

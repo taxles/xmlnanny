@@ -38,6 +38,9 @@
 - (IBAction)parse:(id)sender;
 - (IBAction)clear:(id)sender;
 
+- (IBAction)makeTextBigger:(id)sender;
+- (IBAction)makeTextSmaller:(id)sender;
+
 - (BOOL)busy;
 - (void)setBusy:(BOOL)yn;
 - (BOOL)showSettings;
