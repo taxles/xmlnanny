@@ -591,9 +591,13 @@ typedef enum {
 {
 	NSString *externalEditor = [[NSUserDefaults standardUserDefaults] objectForKey:XNExternalEditorKey];
 
-	NSString *args = [NSString stringWithFormat:@"-a %@ %@", externalEditor, filename];
-	[NSTask launchedTaskWithLaunchPath:@"/usr/bin/open"
-							 arguments:[args componentsSeparatedByString:@" "]];
+    if ([externalEditor length]) {
+        NSString *args = [NSString stringWithFormat:@"-a %@ %@", externalEditor, filename];
+        [NSTask launchedTaskWithLaunchPath:@"/usr/bin/open"
+                                 arguments:[args componentsSeparatedByString:@" "]];
+    } else {
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL fileURLWithPath:filename]];
+    }
 }
 
 
