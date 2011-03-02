@@ -271,7 +271,7 @@ typedef enum {
 
 - (void)setupFonts;
 {
-	NSFont *monaco = [NSFont fontWithName:@"Monaco" size:9.];
+	NSFont *monaco = [NSFont fontWithName:@"Monaco" size:9.0];
 	[sourceXMLTextView setFont:monaco];
 }
 
