@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -76,6 +76,73 @@
 		32DBCF750370BD2300C91783 /* XML Nanny_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XML Nanny_Prefix.pch"; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* XML Nanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML Nanny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3015789131EA0BA00B9544B /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attributes.h; path = usr/include/libxslt/attributes.h; sourceTree = SDKROOT; };
+		D301578A131EA0BA00B9544B /* documents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = documents.h; path = usr/include/libxslt/documents.h; sourceTree = SDKROOT; };
+		D301578B131EA0BA00B9544B /* extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extensions.h; path = usr/include/libxslt/extensions.h; sourceTree = SDKROOT; };
+		D301578C131EA0BA00B9544B /* extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extra.h; path = usr/include/libxslt/extra.h; sourceTree = SDKROOT; };
+		D301578D131EA0BA00B9544B /* functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = functions.h; path = usr/include/libxslt/functions.h; sourceTree = SDKROOT; };
+		D301578E131EA0BA00B9544B /* imports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imports.h; path = usr/include/libxslt/imports.h; sourceTree = SDKROOT; };
+		D301578F131EA0BA00B9544B /* keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keys.h; path = usr/include/libxslt/keys.h; sourceTree = SDKROOT; };
+		D3015790131EA0BA00B9544B /* namespaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = namespaces.h; path = usr/include/libxslt/namespaces.h; sourceTree = SDKROOT; };
+		D3015791131EA0BA00B9544B /* numbersInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = numbersInternals.h; path = usr/include/libxslt/numbersInternals.h; sourceTree = SDKROOT; };
+		D3015792131EA0BA00B9544B /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = usr/include/libxslt/pattern.h; sourceTree = SDKROOT; };
+		D3015793131EA0BA00B9544B /* preproc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = preproc.h; path = usr/include/libxslt/preproc.h; sourceTree = SDKROOT; };
+		D3015794131EA0BA00B9544B /* security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = security.h; path = usr/include/libxslt/security.h; sourceTree = SDKROOT; };
+		D3015795131EA0BA00B9544B /* templates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = templates.h; path = usr/include/libxslt/templates.h; sourceTree = SDKROOT; };
+		D3015796131EA0BA00B9544B /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transform.h; path = usr/include/libxslt/transform.h; sourceTree = SDKROOT; };
+		D3015797131EA0BA00B9544B /* variables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = variables.h; path = usr/include/libxslt/variables.h; sourceTree = SDKROOT; };
+		D3015798131EA0BA00B9544B /* xslt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xslt.h; path = usr/include/libxslt/xslt.h; sourceTree = SDKROOT; };
+		D3015799131EA0BA00B9544B /* xsltconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xsltconfig.h; path = usr/include/libxslt/xsltconfig.h; sourceTree = SDKROOT; };
+		D301579A131EA0BA00B9544B /* xsltexports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xsltexports.h; path = usr/include/libxslt/xsltexports.h; sourceTree = SDKROOT; };
+		D301579B131EA0BA00B9544B /* xsltInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xsltInternals.h; path = usr/include/libxslt/xsltInternals.h; sourceTree = SDKROOT; };
+		D301579C131EA0BA00B9544B /* xsltutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xsltutils.h; path = usr/include/libxslt/xsltutils.h; sourceTree = SDKROOT; };
+		D301579E131EA0C200B9544B /* c14n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c14n.h; path = usr/include/libxml2/libxml/c14n.h; sourceTree = SDKROOT; };
+		D301579F131EA0C200B9544B /* catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = catalog.h; path = usr/include/libxml2/libxml/catalog.h; sourceTree = SDKROOT; };
+		D30157A0131EA0C200B9544B /* chvalid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chvalid.h; path = usr/include/libxml2/libxml/chvalid.h; sourceTree = SDKROOT; };
+		D30157A1131EA0C200B9544B /* debugXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debugXML.h; path = usr/include/libxml2/libxml/debugXML.h; sourceTree = SDKROOT; };
+		D30157A2131EA0C200B9544B /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dict.h; path = usr/include/libxml2/libxml/dict.h; sourceTree = SDKROOT; };
+		D30157A3131EA0C200B9544B /* DOCBparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOCBparser.h; path = usr/include/libxml2/libxml/DOCBparser.h; sourceTree = SDKROOT; };
+		D30157A4131EA0C200B9544B /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = usr/include/libxml2/libxml/encoding.h; sourceTree = SDKROOT; };
+		D30157A5131EA0C200B9544B /* entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entities.h; path = usr/include/libxml2/libxml/entities.h; sourceTree = SDKROOT; };
+		D30157A6131EA0C200B9544B /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = globals.h; path = usr/include/libxml2/libxml/globals.h; sourceTree = SDKROOT; };
+		D30157A7131EA0C200B9544B /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash.h; path = usr/include/libxml2/libxml/hash.h; sourceTree = SDKROOT; };
+		D30157A8131EA0C200B9544B /* HTMLparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLparser.h; path = usr/include/libxml2/libxml/HTMLparser.h; sourceTree = SDKROOT; };
+		D30157A9131EA0C200B9544B /* HTMLtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLtree.h; path = usr/include/libxml2/libxml/HTMLtree.h; sourceTree = SDKROOT; };
+		D30157AA131EA0C200B9544B /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = list.h; path = usr/include/libxml2/libxml/list.h; sourceTree = SDKROOT; };
+		D30157AB131EA0C200B9544B /* nanoftp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nanoftp.h; path = usr/include/libxml2/libxml/nanoftp.h; sourceTree = SDKROOT; };
+		D30157AC131EA0C200B9544B /* nanohttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nanohttp.h; path = usr/include/libxml2/libxml/nanohttp.h; sourceTree = SDKROOT; };
+		D30157AD131EA0C200B9544B /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parser.h; path = usr/include/libxml2/libxml/parser.h; sourceTree = SDKROOT; };
+		D30157AE131EA0C200B9544B /* parserInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parserInternals.h; path = usr/include/libxml2/libxml/parserInternals.h; sourceTree = SDKROOT; };
+		D30157AF131EA0C200B9544B /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = usr/include/libxml2/libxml/pattern.h; sourceTree = SDKROOT; };
+		D30157B0131EA0C200B9544B /* relaxng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = relaxng.h; path = usr/include/libxml2/libxml/relaxng.h; sourceTree = SDKROOT; };
+		D30157B1131EA0C200B9544B /* SAX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAX.h; path = usr/include/libxml2/libxml/SAX.h; sourceTree = SDKROOT; };
+		D30157B2131EA0C200B9544B /* SAX2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAX2.h; path = usr/include/libxml2/libxml/SAX2.h; sourceTree = SDKROOT; };
+		D30157B3131EA0C200B9544B /* schemasInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = schemasInternals.h; path = usr/include/libxml2/libxml/schemasInternals.h; sourceTree = SDKROOT; };
+		D30157B4131EA0C200B9544B /* schematron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = schematron.h; path = usr/include/libxml2/libxml/schematron.h; sourceTree = SDKROOT; };
+		D30157B5131EA0C200B9544B /* threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threads.h; path = usr/include/libxml2/libxml/threads.h; sourceTree = SDKROOT; };
+		D30157B6131EA0C200B9544B /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tree.h; path = usr/include/libxml2/libxml/tree.h; sourceTree = SDKROOT; };
+		D30157B7131EA0C200B9544B /* uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uri.h; path = usr/include/libxml2/libxml/uri.h; sourceTree = SDKROOT; };
+		D30157B8131EA0C200B9544B /* valid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = valid.h; path = usr/include/libxml2/libxml/valid.h; sourceTree = SDKROOT; };
+		D30157B9131EA0C200B9544B /* xinclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xinclude.h; path = usr/include/libxml2/libxml/xinclude.h; sourceTree = SDKROOT; };
+		D30157BA131EA0C200B9544B /* xlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xlink.h; path = usr/include/libxml2/libxml/xlink.h; sourceTree = SDKROOT; };
+		D30157BB131EA0C200B9544B /* xmlautomata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlautomata.h; path = usr/include/libxml2/libxml/xmlautomata.h; sourceTree = SDKROOT; };
+		D30157BC131EA0C200B9544B /* xmlerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlerror.h; path = usr/include/libxml2/libxml/xmlerror.h; sourceTree = SDKROOT; };
+		D30157BD131EA0C200B9544B /* xmlexports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlexports.h; path = usr/include/libxml2/libxml/xmlexports.h; sourceTree = SDKROOT; };
+		D30157BE131EA0C200B9544B /* xmlIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlIO.h; path = usr/include/libxml2/libxml/xmlIO.h; sourceTree = SDKROOT; };
+		D30157BF131EA0C200B9544B /* xmlmemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlmemory.h; path = usr/include/libxml2/libxml/xmlmemory.h; sourceTree = SDKROOT; };
+		D30157C0131EA0C200B9544B /* xmlmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlmodule.h; path = usr/include/libxml2/libxml/xmlmodule.h; sourceTree = SDKROOT; };
+		D30157C1131EA0C200B9544B /* xmlreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlreader.h; path = usr/include/libxml2/libxml/xmlreader.h; sourceTree = SDKROOT; };
+		D30157C2131EA0C200B9544B /* xmlregexp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlregexp.h; path = usr/include/libxml2/libxml/xmlregexp.h; sourceTree = SDKROOT; };
+		D30157C3131EA0C200B9544B /* xmlsave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlsave.h; path = usr/include/libxml2/libxml/xmlsave.h; sourceTree = SDKROOT; };
+		D30157C4131EA0C200B9544B /* xmlschemas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlschemas.h; path = usr/include/libxml2/libxml/xmlschemas.h; sourceTree = SDKROOT; };
+		D30157C5131EA0C200B9544B /* xmlschemastypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlschemastypes.h; path = usr/include/libxml2/libxml/xmlschemastypes.h; sourceTree = SDKROOT; };
+		D30157C6131EA0C200B9544B /* xmlstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlstring.h; path = usr/include/libxml2/libxml/xmlstring.h; sourceTree = SDKROOT; };
+		D30157C7131EA0C200B9544B /* xmlunicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlunicode.h; path = usr/include/libxml2/libxml/xmlunicode.h; sourceTree = SDKROOT; };
+		D30157C8131EA0C200B9544B /* xmlversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlversion.h; path = usr/include/libxml2/libxml/xmlversion.h; sourceTree = SDKROOT; };
+		D30157C9131EA0C200B9544B /* xmlwriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = usr/include/libxml2/libxml/xmlwriter.h; sourceTree = SDKROOT; };
+		D30157CA131EA0C200B9544B /* xpath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xpath.h; path = usr/include/libxml2/libxml/xpath.h; sourceTree = SDKROOT; };
+		D30157CB131EA0C200B9544B /* xpathInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xpathInternals.h; path = usr/include/libxml2/libxml/xpathInternals.h; sourceTree = SDKROOT; };
+		D30157CC131EA0C200B9544B /* xpointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xpointer.h; path = usr/include/libxml2/libxml/xpointer.h; sourceTree = SDKROOT; };
 		D341648F0B59609300914C87 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D34164900B59609300914C87 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D34164B20B59615200914C87 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
@@ -114,71 +181,6 @@
 		D3EF2B6F0B58B599005FA184 /* study.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = study.c; sourceTree = "<group>"; };
 		D3EF2BE00B58BA8F005FA184 /* libexslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexslt.dylib; path = /usr/lib/libexslt.dylib; sourceTree = "<absolute>"; };
 		D3EF2BE20B58BA93005FA184 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = /usr/lib/libxslt.dylib; sourceTree = "<absolute>"; };
-		D3EF2BF50B58BADA005FA184 /* c14n.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = c14n.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/c14n.h; sourceTree = "<absolute>"; };
-		D3EF2BF60B58BADA005FA184 /* catalog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = catalog.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/catalog.h; sourceTree = "<absolute>"; };
-		D3EF2BF70B58BADA005FA184 /* chvalid.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = chvalid.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/chvalid.h; sourceTree = "<absolute>"; };
-		D3EF2BF80B58BADA005FA184 /* debugXML.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = debugXML.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/debugXML.h; sourceTree = "<absolute>"; };
-		D3EF2BF90B58BADA005FA184 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dict.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/dict.h; sourceTree = "<absolute>"; };
-		D3EF2BFA0B58BADA005FA184 /* DOCBparser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DOCBparser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/DOCBparser.h; sourceTree = "<absolute>"; };
-		D3EF2BFB0B58BADA005FA184 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/encoding.h; sourceTree = "<absolute>"; };
-		D3EF2BFC0B58BADA005FA184 /* entities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = entities.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/entities.h; sourceTree = "<absolute>"; };
-		D3EF2BFD0B58BADA005FA184 /* globals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = globals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/globals.h; sourceTree = "<absolute>"; };
-		D3EF2BFE0B58BADA005FA184 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = hash.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/hash.h; sourceTree = "<absolute>"; };
-		D3EF2BFF0B58BADA005FA184 /* HTMLparser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HTMLparser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/HTMLparser.h; sourceTree = "<absolute>"; };
-		D3EF2C000B58BADA005FA184 /* HTMLtree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HTMLtree.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/HTMLtree.h; sourceTree = "<absolute>"; };
-		D3EF2C010B58BADA005FA184 /* list.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = list.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/list.h; sourceTree = "<absolute>"; };
-		D3EF2C020B58BADA005FA184 /* nanoftp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = nanoftp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/nanoftp.h; sourceTree = "<absolute>"; };
-		D3EF2C030B58BADA005FA184 /* nanohttp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = nanohttp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/nanohttp.h; sourceTree = "<absolute>"; };
-		D3EF2C040B58BADA005FA184 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = parser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/parser.h; sourceTree = "<absolute>"; };
-		D3EF2C050B58BADA005FA184 /* parserInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = parserInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/parserInternals.h; sourceTree = "<absolute>"; };
-		D3EF2C060B58BADA005FA184 /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/pattern.h; sourceTree = "<absolute>"; };
-		D3EF2C070B58BADA005FA184 /* relaxng.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = relaxng.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/relaxng.h; sourceTree = "<absolute>"; };
-		D3EF2C080B58BADA005FA184 /* SAX.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SAX.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/SAX.h; sourceTree = "<absolute>"; };
-		D3EF2C090B58BADA005FA184 /* SAX2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SAX2.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/SAX2.h; sourceTree = "<absolute>"; };
-		D3EF2C0A0B58BADA005FA184 /* schemasInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = schemasInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/schemasInternals.h; sourceTree = "<absolute>"; };
-		D3EF2C0B0B58BADA005FA184 /* threads.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = threads.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/threads.h; sourceTree = "<absolute>"; };
-		D3EF2C0C0B58BADA005FA184 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tree.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/tree.h; sourceTree = "<absolute>"; };
-		D3EF2C0D0B58BADA005FA184 /* uri.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = uri.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/uri.h; sourceTree = "<absolute>"; };
-		D3EF2C0E0B58BADA005FA184 /* valid.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = valid.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/valid.h; sourceTree = "<absolute>"; };
-		D3EF2C0F0B58BADA005FA184 /* xinclude.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xinclude.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xinclude.h; sourceTree = "<absolute>"; };
-		D3EF2C100B58BADA005FA184 /* xlink.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xlink.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xlink.h; sourceTree = "<absolute>"; };
-		D3EF2C110B58BADA005FA184 /* xmlautomata.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlautomata.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlautomata.h; sourceTree = "<absolute>"; };
-		D3EF2C120B58BADA005FA184 /* xmlerror.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlerror.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlerror.h; sourceTree = "<absolute>"; };
-		D3EF2C130B58BADA005FA184 /* xmlexports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlexports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlexports.h; sourceTree = "<absolute>"; };
-		D3EF2C140B58BADA005FA184 /* xmlIO.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlIO.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlIO.h; sourceTree = "<absolute>"; };
-		D3EF2C150B58BADA005FA184 /* xmlmemory.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlmemory.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlmemory.h; sourceTree = "<absolute>"; };
-		D3EF2C160B58BADA005FA184 /* xmlreader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlreader.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlreader.h; sourceTree = "<absolute>"; };
-		D3EF2C170B58BADA005FA184 /* xmlregexp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlregexp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlregexp.h; sourceTree = "<absolute>"; };
-		D3EF2C180B58BADA005FA184 /* xmlsave.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlsave.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlsave.h; sourceTree = "<absolute>"; };
-		D3EF2C190B58BADA005FA184 /* xmlschemas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlschemas.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlschemas.h; sourceTree = "<absolute>"; };
-		D3EF2C1A0B58BADA005FA184 /* xmlschemastypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlschemastypes.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlschemastypes.h; sourceTree = "<absolute>"; };
-		D3EF2C1B0B58BADA005FA184 /* xmlstring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlstring.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlstring.h; sourceTree = "<absolute>"; };
-		D3EF2C1C0B58BADA005FA184 /* xmlunicode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlunicode.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlunicode.h; sourceTree = "<absolute>"; };
-		D3EF2C1D0B58BADA005FA184 /* xmlversion.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlversion.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlversion.h; sourceTree = "<absolute>"; };
-		D3EF2C1E0B58BADA005FA184 /* xmlwriter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlwriter.h; sourceTree = "<absolute>"; };
-		D3EF2C1F0B58BADA005FA184 /* xpath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpath.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpath.h; sourceTree = "<absolute>"; };
-		D3EF2C200B58BADA005FA184 /* xpathInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpathInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpathInternals.h; sourceTree = "<absolute>"; };
-		D3EF2C210B58BADA005FA184 /* xpointer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpointer.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpointer.h; sourceTree = "<absolute>"; };
-		D3EF2C230B58BAE0005FA184 /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = attributes.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/attributes.h; sourceTree = "<absolute>"; };
-		D3EF2C240B58BAE0005FA184 /* documents.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = documents.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/documents.h; sourceTree = "<absolute>"; };
-		D3EF2C250B58BAE0005FA184 /* extensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = extensions.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/extensions.h; sourceTree = "<absolute>"; };
-		D3EF2C260B58BAE0005FA184 /* extra.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = extra.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/extra.h; sourceTree = "<absolute>"; };
-		D3EF2C270B58BAE0005FA184 /* functions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = functions.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/functions.h; sourceTree = "<absolute>"; };
-		D3EF2C280B58BAE0005FA184 /* imports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = imports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/imports.h; sourceTree = "<absolute>"; };
-		D3EF2C290B58BAE0005FA184 /* keys.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = keys.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/keys.h; sourceTree = "<absolute>"; };
-		D3EF2C2A0B58BAE0005FA184 /* namespaces.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = namespaces.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/namespaces.h; sourceTree = "<absolute>"; };
-		D3EF2C2B0B58BAE0005FA184 /* numbersInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = numbersInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/numbersInternals.h; sourceTree = "<absolute>"; };
-		D3EF2C2C0B58BAE0005FA184 /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/pattern.h; sourceTree = "<absolute>"; };
-		D3EF2C2D0B58BAE0005FA184 /* preproc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = preproc.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/preproc.h; sourceTree = "<absolute>"; };
-		D3EF2C2E0B58BAE0005FA184 /* security.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = security.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/security.h; sourceTree = "<absolute>"; };
-		D3EF2C2F0B58BAE0005FA184 /* templates.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = templates.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/templates.h; sourceTree = "<absolute>"; };
-		D3EF2C300B58BAE0005FA184 /* transform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = transform.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/transform.h; sourceTree = "<absolute>"; };
-		D3EF2C310B58BAE0005FA184 /* variables.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = variables.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/variables.h; sourceTree = "<absolute>"; };
-		D3EF2C320B58BAE0005FA184 /* xslt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xslt.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xslt.h; sourceTree = "<absolute>"; };
-		D3EF2C330B58BAE0005FA184 /* xsltconfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltconfig.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltconfig.h; sourceTree = "<absolute>"; };
-		D3EF2C340B58BAE0005FA184 /* xsltexports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltexports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltexports.h; sourceTree = "<absolute>"; };
-		D3EF2C350B58BAE0005FA184 /* xsltInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltInternals.h; sourceTree = "<absolute>"; };
-		D3EF2C360B58BAE0005FA184 /* xsltutils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltutils.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltutils.h; sourceTree = "<absolute>"; };
 		D3EF2C5F0B58BB28005FA184 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		D3EF2CA90B58BC24005FA184 /* XMLParseCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XMLParseCommand.h; sourceTree = "<group>"; };
 		D3EF2CAA0B58BC24005FA184 /* XMLParseCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = XMLParseCommand.m; sourceTree = "<group>"; };
@@ -297,8 +299,8 @@
 		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D3EF2C220B58BAE0005FA184 /* libxslt */,
-				D3EF2BF40B58BADA005FA184 /* libxml */,
+				D301579D131EA0C200B9544B /* libxml */,
+				D3015788131EA0BA00B9544B /* libxslt */,
 				D3EF2B670B58B599005FA184 /* pcre-4.3 */,
 				32DBCF750370BD2300C91783 /* XML Nanny_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
@@ -332,6 +334,89 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		D3015788131EA0BA00B9544B /* libxslt */ = {
+			isa = PBXGroup;
+			children = (
+				D3015789131EA0BA00B9544B /* attributes.h */,
+				D301578A131EA0BA00B9544B /* documents.h */,
+				D301578B131EA0BA00B9544B /* extensions.h */,
+				D301578C131EA0BA00B9544B /* extra.h */,
+				D301578D131EA0BA00B9544B /* functions.h */,
+				D301578E131EA0BA00B9544B /* imports.h */,
+				D301578F131EA0BA00B9544B /* keys.h */,
+				D3015790131EA0BA00B9544B /* namespaces.h */,
+				D3015791131EA0BA00B9544B /* numbersInternals.h */,
+				D3015792131EA0BA00B9544B /* pattern.h */,
+				D3015793131EA0BA00B9544B /* preproc.h */,
+				D3015794131EA0BA00B9544B /* security.h */,
+				D3015795131EA0BA00B9544B /* templates.h */,
+				D3015796131EA0BA00B9544B /* transform.h */,
+				D3015797131EA0BA00B9544B /* variables.h */,
+				D3015798131EA0BA00B9544B /* xslt.h */,
+				D3015799131EA0BA00B9544B /* xsltconfig.h */,
+				D301579A131EA0BA00B9544B /* xsltexports.h */,
+				D301579B131EA0BA00B9544B /* xsltInternals.h */,
+				D301579C131EA0BA00B9544B /* xsltutils.h */,
+			);
+			name = libxslt;
+			path = usr/include/libxslt;
+			sourceTree = SDKROOT;
+		};
+		D301579D131EA0C200B9544B /* libxml */ = {
+			isa = PBXGroup;
+			children = (
+				D301579E131EA0C200B9544B /* c14n.h */,
+				D301579F131EA0C200B9544B /* catalog.h */,
+				D30157A0131EA0C200B9544B /* chvalid.h */,
+				D30157A1131EA0C200B9544B /* debugXML.h */,
+				D30157A2131EA0C200B9544B /* dict.h */,
+				D30157A3131EA0C200B9544B /* DOCBparser.h */,
+				D30157A4131EA0C200B9544B /* encoding.h */,
+				D30157A5131EA0C200B9544B /* entities.h */,
+				D30157A6131EA0C200B9544B /* globals.h */,
+				D30157A7131EA0C200B9544B /* hash.h */,
+				D30157A8131EA0C200B9544B /* HTMLparser.h */,
+				D30157A9131EA0C200B9544B /* HTMLtree.h */,
+				D30157AA131EA0C200B9544B /* list.h */,
+				D30157AB131EA0C200B9544B /* nanoftp.h */,
+				D30157AC131EA0C200B9544B /* nanohttp.h */,
+				D30157AD131EA0C200B9544B /* parser.h */,
+				D30157AE131EA0C200B9544B /* parserInternals.h */,
+				D30157AF131EA0C200B9544B /* pattern.h */,
+				D30157B0131EA0C200B9544B /* relaxng.h */,
+				D30157B1131EA0C200B9544B /* SAX.h */,
+				D30157B2131EA0C200B9544B /* SAX2.h */,
+				D30157B3131EA0C200B9544B /* schemasInternals.h */,
+				D30157B4131EA0C200B9544B /* schematron.h */,
+				D30157B5131EA0C200B9544B /* threads.h */,
+				D30157B6131EA0C200B9544B /* tree.h */,
+				D30157B7131EA0C200B9544B /* uri.h */,
+				D30157B8131EA0C200B9544B /* valid.h */,
+				D30157B9131EA0C200B9544B /* xinclude.h */,
+				D30157BA131EA0C200B9544B /* xlink.h */,
+				D30157BB131EA0C200B9544B /* xmlautomata.h */,
+				D30157BC131EA0C200B9544B /* xmlerror.h */,
+				D30157BD131EA0C200B9544B /* xmlexports.h */,
+				D30157BE131EA0C200B9544B /* xmlIO.h */,
+				D30157BF131EA0C200B9544B /* xmlmemory.h */,
+				D30157C0131EA0C200B9544B /* xmlmodule.h */,
+				D30157C1131EA0C200B9544B /* xmlreader.h */,
+				D30157C2131EA0C200B9544B /* xmlregexp.h */,
+				D30157C3131EA0C200B9544B /* xmlsave.h */,
+				D30157C4131EA0C200B9544B /* xmlschemas.h */,
+				D30157C5131EA0C200B9544B /* xmlschemastypes.h */,
+				D30157C6131EA0C200B9544B /* xmlstring.h */,
+				D30157C7131EA0C200B9544B /* xmlunicode.h */,
+				D30157C8131EA0C200B9544B /* xmlversion.h */,
+				D30157C9131EA0C200B9544B /* xmlwriter.h */,
+				D30157CA131EA0C200B9544B /* xpath.h */,
+				D30157CB131EA0C200B9544B /* xpathInternals.h */,
+				D30157CC131EA0C200B9544B /* xpointer.h */,
+			);
+			name = libxml;
+			path = usr/include/libxml2/libxml;
+			sourceTree = SDKROOT;
 		};
 		D341690A0B59D40D00914C87 /* Scripts */ = {
 			isa = PBXGroup;
@@ -418,87 +503,6 @@
 			name = "pcre-4.3";
 			path = "src/pcre-4.3";
 			sourceTree = "<group>";
-		};
-		D3EF2BF40B58BADA005FA184 /* libxml */ = {
-			isa = PBXGroup;
-			children = (
-				D3EF2BF50B58BADA005FA184 /* c14n.h */,
-				D3EF2BF60B58BADA005FA184 /* catalog.h */,
-				D3EF2BF70B58BADA005FA184 /* chvalid.h */,
-				D3EF2BF80B58BADA005FA184 /* debugXML.h */,
-				D3EF2BF90B58BADA005FA184 /* dict.h */,
-				D3EF2BFA0B58BADA005FA184 /* DOCBparser.h */,
-				D3EF2BFB0B58BADA005FA184 /* encoding.h */,
-				D3EF2BFC0B58BADA005FA184 /* entities.h */,
-				D3EF2BFD0B58BADA005FA184 /* globals.h */,
-				D3EF2BFE0B58BADA005FA184 /* hash.h */,
-				D3EF2BFF0B58BADA005FA184 /* HTMLparser.h */,
-				D3EF2C000B58BADA005FA184 /* HTMLtree.h */,
-				D3EF2C010B58BADA005FA184 /* list.h */,
-				D3EF2C020B58BADA005FA184 /* nanoftp.h */,
-				D3EF2C030B58BADA005FA184 /* nanohttp.h */,
-				D3EF2C040B58BADA005FA184 /* parser.h */,
-				D3EF2C050B58BADA005FA184 /* parserInternals.h */,
-				D3EF2C060B58BADA005FA184 /* pattern.h */,
-				D3EF2C070B58BADA005FA184 /* relaxng.h */,
-				D3EF2C080B58BADA005FA184 /* SAX.h */,
-				D3EF2C090B58BADA005FA184 /* SAX2.h */,
-				D3EF2C0A0B58BADA005FA184 /* schemasInternals.h */,
-				D3EF2C0B0B58BADA005FA184 /* threads.h */,
-				D3EF2C0C0B58BADA005FA184 /* tree.h */,
-				D3EF2C0D0B58BADA005FA184 /* uri.h */,
-				D3EF2C0E0B58BADA005FA184 /* valid.h */,
-				D3EF2C0F0B58BADA005FA184 /* xinclude.h */,
-				D3EF2C100B58BADA005FA184 /* xlink.h */,
-				D3EF2C110B58BADA005FA184 /* xmlautomata.h */,
-				D3EF2C120B58BADA005FA184 /* xmlerror.h */,
-				D3EF2C130B58BADA005FA184 /* xmlexports.h */,
-				D3EF2C140B58BADA005FA184 /* xmlIO.h */,
-				D3EF2C150B58BADA005FA184 /* xmlmemory.h */,
-				D3EF2C160B58BADA005FA184 /* xmlreader.h */,
-				D3EF2C170B58BADA005FA184 /* xmlregexp.h */,
-				D3EF2C180B58BADA005FA184 /* xmlsave.h */,
-				D3EF2C190B58BADA005FA184 /* xmlschemas.h */,
-				D3EF2C1A0B58BADA005FA184 /* xmlschemastypes.h */,
-				D3EF2C1B0B58BADA005FA184 /* xmlstring.h */,
-				D3EF2C1C0B58BADA005FA184 /* xmlunicode.h */,
-				D3EF2C1D0B58BADA005FA184 /* xmlversion.h */,
-				D3EF2C1E0B58BADA005FA184 /* xmlwriter.h */,
-				D3EF2C1F0B58BADA005FA184 /* xpath.h */,
-				D3EF2C200B58BADA005FA184 /* xpathInternals.h */,
-				D3EF2C210B58BADA005FA184 /* xpointer.h */,
-			);
-			name = libxml;
-			path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml;
-			sourceTree = "<absolute>";
-		};
-		D3EF2C220B58BAE0005FA184 /* libxslt */ = {
-			isa = PBXGroup;
-			children = (
-				D3EF2C230B58BAE0005FA184 /* attributes.h */,
-				D3EF2C240B58BAE0005FA184 /* documents.h */,
-				D3EF2C250B58BAE0005FA184 /* extensions.h */,
-				D3EF2C260B58BAE0005FA184 /* extra.h */,
-				D3EF2C270B58BAE0005FA184 /* functions.h */,
-				D3EF2C280B58BAE0005FA184 /* imports.h */,
-				D3EF2C290B58BAE0005FA184 /* keys.h */,
-				D3EF2C2A0B58BAE0005FA184 /* namespaces.h */,
-				D3EF2C2B0B58BAE0005FA184 /* numbersInternals.h */,
-				D3EF2C2C0B58BAE0005FA184 /* pattern.h */,
-				D3EF2C2D0B58BAE0005FA184 /* preproc.h */,
-				D3EF2C2E0B58BAE0005FA184 /* security.h */,
-				D3EF2C2F0B58BAE0005FA184 /* templates.h */,
-				D3EF2C300B58BAE0005FA184 /* transform.h */,
-				D3EF2C310B58BAE0005FA184 /* variables.h */,
-				D3EF2C320B58BAE0005FA184 /* xslt.h */,
-				D3EF2C330B58BAE0005FA184 /* xsltconfig.h */,
-				D3EF2C340B58BAE0005FA184 /* xsltexports.h */,
-				D3EF2C350B58BAE0005FA184 /* xsltInternals.h */,
-				D3EF2C360B58BAE0005FA184 /* xsltutils.h */,
-			);
-			name = libxslt;
-			path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt;
-			sourceTree = "<absolute>";
 		};
 		D3EF2CE40B58BCE7005FA184 /* Images */ = {
 			isa = PBXGroup;
@@ -599,8 +603,15 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "XML Nanny" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* XML Nanny */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -738,6 +749,7 @@
 		C05733C808A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -754,7 +766,8 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "XML Nanny";
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -763,13 +776,10 @@
 		C05733C908A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = NO;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
@@ -782,8 +792,8 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "XML Nanny";
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
-				VALID_ARCHS = "ppc64 ppc7400 ppc970 i386 x86_64 ppc";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -792,20 +802,24 @@
 		C05733CC08A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
