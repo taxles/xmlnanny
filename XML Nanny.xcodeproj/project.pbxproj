@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
-		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
-		8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		D34164910B59609300914C87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34164900B59609300914C87 /* AppDelegate.m */; };
 		D34164B40B59615200914C87 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34164B30B59615200914C87 /* PrefController.m */; };
-		D34164F90B59637400914C87 /* PrefWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = D34164F70B59637400914C87 /* PrefWindow.nib */; };
 		D34164FC0B5964D800914C87 /* CatalogController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34164FB0B5964D800914C87 /* CatalogController.m */; };
-		D34165930B59685700914C87 /* CatalogWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = D34165910B59685700914C87 /* CatalogWindow.nib */; };
 		D341690D0B59D40D00914C87 /* openBBEditDoc.txt in Resources */ = {isa = PBXBuildFile; fileRef = D341690B0B59D40D00914C87 /* openBBEditDoc.txt */; };
 		D341690E0B59D40D00914C87 /* openBBEditDocAtLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = D341690C0B59D40D00914C87 /* openBBEditDocAtLine.txt */; };
 		D38D45730B669B01009A1E3F /* openSubEthaEditDocAtLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = D38D45720B669B01009A1E3F /* openSubEthaEditDocAtLine.txt */; };
 		D3B65AC10D381833005060A1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B65AC00D381833005060A1 /* libxml2.dylib */; };
 		D3B65C0C0D38185C005060A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B65C0B0D38185C005060A1 /* Cocoa.framework */; };
+		D3D0C41D131F693F00905509 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C41B131F693E00905509 /* MainMenu.xib */; };
+		D3D0C421131F695900905509 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C41F131F695900905509 /* MyDocument.xib */; };
+		D3D0C425131F696E00905509 /* PrefWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C423131F696E00905509 /* PrefWindow.xib */; };
+		D3D0C429131F697D00905509 /* CatalogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C427131F697D00905509 /* CatalogWindow.xib */; };
 		D3EF2B850B58B599005FA184 /* AGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EF2B540B58B599005FA184 /* AGRegex.m */; };
 		D3EF2B860B58B599005FA184 /* BorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EF2B570B58B599005FA184 /* BorderView.m */; };
 		D3EF2B870B58B599005FA184 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EF2B590B58B599005FA184 /* MyController.m */; };
@@ -70,8 +70,6 @@
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDocument.nib; sourceTree = "<group>"; };
-		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		32DBCF750370BD2300C91783 /* XML Nanny_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XML Nanny_Prefix.pch"; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -147,15 +145,17 @@
 		D34164900B59609300914C87 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D34164B20B59615200914C87 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
 		D34164B30B59615200914C87 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
-		D34164F80B59637400914C87 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PrefWindow.nib; sourceTree = "<group>"; };
 		D34164FA0B5964D800914C87 /* CatalogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogController.h; sourceTree = "<group>"; };
 		D34164FB0B5964D800914C87 /* CatalogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogController.m; sourceTree = "<group>"; };
-		D34165920B59685700914C87 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CatalogWindow.nib; sourceTree = "<group>"; };
 		D341690B0B59D40D00914C87 /* openBBEditDoc.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = openBBEditDoc.txt; sourceTree = "<group>"; };
 		D341690C0B59D40D00914C87 /* openBBEditDocAtLine.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = openBBEditDocAtLine.txt; sourceTree = "<group>"; };
 		D38D45720B669B01009A1E3F /* openSubEthaEditDocAtLine.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openSubEthaEditDocAtLine.txt; sourceTree = "<group>"; };
 		D3B65AC00D381833005060A1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		D3B65C0B0D38185C005060A1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D3D0C41C131F693E00905509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D3D0C420131F695900905509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		D3D0C424131F696E00905509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PrefWindow.xib; sourceTree = "<group>"; };
+		D3D0C428131F697D00905509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/CatalogWindow.xib; sourceTree = "<group>"; };
 		D3EF2B530B58B599005FA184 /* AGRegex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AGRegex.h; sourceTree = "<group>"; };
 		D3EF2B540B58B599005FA184 /* AGRegex.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AGRegex.m; sourceTree = "<group>"; };
 		D3EF2B560B58B599005FA184 /* BorderView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BorderView.h; sourceTree = "<group>"; };
@@ -311,6 +311,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D3D0C42B131F699600905509 /* Nib */,
 				D341690A0B59D40D00914C87 /* Scripts */,
 				D3EF2D0E0B58BD0F005FA184 /* Markup */,
 				D3EF2D090B58BCF0005FA184 /* Icons */,
@@ -318,10 +319,6 @@
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
-				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
-				2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */,
-				D34164F70B59637400914C87 /* PrefWindow.nib */,
-				D34165910B59685700914C87 /* CatalogWindow.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -427,6 +424,17 @@
 			);
 			name = Scripts;
 			path = res/Scripts;
+			sourceTree = "<group>";
+		};
+		D3D0C42B131F699600905509 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				D3D0C41B131F693E00905509 /* MainMenu.xib */,
+				D3D0C41F131F695900905509 /* MyDocument.xib */,
+				D3D0C423131F696E00905509 /* PrefWindow.xib */,
+				D3D0C427131F697D00905509 /* CatalogWindow.xib */,
+			);
+			name = Nib;
 			sourceTree = "<group>";
 		};
 		D3EF2B520B58B599005FA184 /* AGRegex */ = {
@@ -629,8 +637,6 @@
 				D3EF2D0C0B58BCF0005FA184 /* appl.icns in Resources */,
 				D3EF2D0D0B58BCF0005FA184 /* file.icns in Resources */,
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
-				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
-				8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				D3EF2CFA0B58BCE7005FA184 /* error-icon-128.png in Resources */,
 				D3EF2CFB0B58BCE7005FA184 /* error-icon-small.png in Resources */,
@@ -648,11 +654,13 @@
 				D3EF2D160B58BD0F005FA184 /* sch-custom.xsl in Resources */,
 				D3EF2D170B58BD0F005FA184 /* schematron.dtd in Resources */,
 				D3EF2D180B58BD0F005FA184 /* skeleton-1.5.xsl in Resources */,
-				D34164F90B59637400914C87 /* PrefWindow.nib in Resources */,
-				D34165930B59685700914C87 /* CatalogWindow.nib in Resources */,
 				D341690D0B59D40D00914C87 /* openBBEditDoc.txt in Resources */,
 				D341690E0B59D40D00914C87 /* openBBEditDocAtLine.txt in Resources */,
 				D38D45730B669B01009A1E3F /* openSubEthaEditDocAtLine.txt in Resources */,
+				D3D0C41D131F693F00905509 /* MainMenu.xib in Resources */,
+				D3D0C421131F695900905509 /* MyDocument.xib in Resources */,
+				D3D0C425131F696E00905509 /* PrefWindow.xib in Resources */,
+				D3D0C429131F697D00905509 /* CatalogWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,22 +711,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A37F4B5FDCFA73011CA2CEA /* English */,
-			);
-			name = MyDocument.nib;
-			sourceTree = "<group>";
-		};
-		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A37F4B7FDCFA73011CA2CEA /* English */,
-			);
-			name = MainMenu.nib;
-			sourceTree = "<group>";
-		};
 		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -727,20 +719,36 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		D34164F70B59637400914C87 /* PrefWindow.nib */ = {
+		D3D0C41B131F693E00905509 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D34164F80B59637400914C87 /* English */,
+				D3D0C41C131F693E00905509 /* English */,
 			);
-			name = PrefWindow.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		D34165910B59685700914C87 /* CatalogWindow.nib */ = {
+		D3D0C41F131F695900905509 /* MyDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D34165920B59685700914C87 /* English */,
+				D3D0C420131F695900905509 /* English */,
 			);
-			name = CatalogWindow.nib;
+			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+		D3D0C423131F696E00905509 /* PrefWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3D0C424131F696E00905509 /* English */,
+			);
+			name = PrefWindow.xib;
+			sourceTree = "<group>";
+		};
+		D3D0C427131F697D00905509 /* CatalogWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3D0C428131F697D00905509 /* English */,
+			);
+			name = CatalogWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
