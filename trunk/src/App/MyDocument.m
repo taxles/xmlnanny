@@ -11,7 +11,7 @@
 
 static NSString * const PreferedCatalogItemTypeKey	= @"preferedCatalogItemType";
 static NSString * const CatalogItemsKey				= @"catalogItems";
-static NSString * const WindowFrameStringKey		= @"windowFrameString";
+//static NSString * const WindowFrameStringKey		= @"windowFrameString";
 static NSString * const ShowSettingsKey				= @"showSettings";
 static NSString * const XMLParseCommandKey			= @"command";
 static NSString * const RecentSchemaURLStrings		= @"recentSchemaURLStrings";
@@ -51,13 +51,13 @@ static NSString * const RecentSchemaURLStrings		= @"recentSchemaURLStrings";
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError;
 {
-	NSString *windowFrameString			= [[controller window] stringWithSavedFrame];
+	//NSString *windowFrameString			= [[controller window] stringWithSavedFrame];
 	NSNumber *showSettings				= [NSNumber numberWithBool:[controller showSettings]];
 	XMLParseCommand *command			= [controller command];
 	NSArray *recentSchemaURLStrings		= [controller recentSchemaURLStrings];
 	
 	NSDictionary *d = [NSDictionary dictionaryWithObjectsAndKeys:
-		windowFrameString, WindowFrameStringKey,
+		//windowFrameString, WindowFrameStringKey,
 		showSettings, ShowSettingsKey,
 		command, XMLParseCommandKey,
 		recentSchemaURLStrings, RecentSchemaURLStrings,
@@ -71,12 +71,12 @@ static NSString * const RecentSchemaURLStrings		= @"recentSchemaURLStrings";
 {	
 	NSDictionary *d = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 
-	NSString *windowFrameString			   = [d objectForKey:WindowFrameStringKey];
+	//NSString *windowFrameString			   = [d objectForKey:WindowFrameStringKey];
 	BOOL showSettings					   = [[d objectForKey:ShowSettingsKey] boolValue];
 	XMLParseCommand *command			   = [d objectForKey:XMLParseCommandKey];
 	NSMutableArray *recentSchemaURLStrings = [NSMutableArray arrayWithArray:[d objectForKey:RecentSchemaURLStrings]];
 
-	[[controller window] setFrameFromString:windowFrameString];
+	//[[controller window] setFrameFromString:windowFrameString];
 	[controller setShowSettings:showSettings];
 	[controller setCommand:command];
 	[controller setRecentSchemaURLStrings:recentSchemaURLStrings];
