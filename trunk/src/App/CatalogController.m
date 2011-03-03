@@ -14,7 +14,7 @@
 
 static NSString * const PreferedCatalogItemTypeKey	= @"preferedCatalogItemType";
 static NSString * const CatalogItemsKey				= @"catalogItems";
-static NSString * const WindowFrameStringKey		= @"windowFrameString";
+//static NSString * const WindowFrameStringKey		= @"windowFrameString";
 static NSString * const PrefsFileName				= @"catalogPrefs";
 static NSString * const PrefsFileExt				= @"plist";
 
@@ -113,11 +113,11 @@ static NSString * const PrefsFileExt				= @"plist";
 	
 	//int type					= [[d objectForKey:PreferedCatalogItemTypeKey] intValue];
 	NSMutableArray *items		= [NSMutableArray arrayWithArray:[d objectForKey:CatalogItemsKey]];
-	NSString *windowFrameString = [d objectForKey:WindowFrameStringKey];
+	//NSString *windowFrameString = [d objectForKey:WindowFrameStringKey];
 	
 	[self setPreferedCatalogItemType:1];
 	[self setCatalogItems:items];
-	[[self window] setFrameFromString:windowFrameString];
+	//[[self window] setFrameFromString:windowFrameString];
 }
 
 
@@ -129,7 +129,7 @@ static NSString * const PrefsFileExt				= @"plist";
 	NSDictionary *d = [NSDictionary dictionaryWithObjectsAndKeys:
 		//[NSNumber numberWithInt:preferedCatalogItemType], PreferedCatalogItemTypeKey,
 		catalogItems, CatalogItemsKey,
-		[[self window] stringWithSavedFrame], WindowFrameStringKey,
+		//[[self window] stringWithSavedFrame], WindowFrameStringKey,
 		nil];
 	
 	[NSKeyedArchiver archiveRootObject:d toFile:path];
@@ -214,20 +214,20 @@ static NSString * const PrefsFileExt				= @"plist";
 #pragma mark -
 #pragma mark NSSplitViewDelegate
 
-- (float)splitView:(NSSplitView *)sender constrainMaxCoordinate:(float)proposedMax ofSubviewAt:(int)offset;
+- (CGFloat)splitView:(NSSplitView *)sender constrainMaxCoordinate:(CGFloat)proposedMax ofSubviewAt:(NSInteger)offset;
 {
 	if (offset == 0) {
 		NSRect r = [[self window] frame];
-		return r.size.height - 129;
+		return r.size.height - 129.0;
 	}
 	return proposedMax;
 }
 
 
-- (float)splitView:(NSSplitView *)sender constrainMinCoordinate:(float)proposedMin ofSubviewAt:(int)offset;
+- (CGFloat)splitView:(NSSplitView *)sender constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(int)offset;
 {
 	if (offset == 0) {
-		return 30;
+		return 30.0;
 	}
 	return proposedMin;
 }
