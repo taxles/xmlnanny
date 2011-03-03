@@ -503,7 +503,7 @@ typedef enum {
 - (void)changeSizeForSettings;
 {
 	NSPoint p = [bottomView bounds].origin;
-	p.y = (showSettings) ? 80. : 0.;
+	p.y = (showSettings) ? 80.0 : 0.0;
 	[bottomView setBoundsOrigin:p];
 	[bottomView setNeedsDisplay:YES];	
 }
@@ -651,14 +651,14 @@ typedef enum {
 				if ([schemaFilename length]) {
 					[msg appendFormat:@"user-specified DTD: <tt>%@</tt>", schemaFilename];
 				} else {
-					[msg appendString:@"internally referenced DTD"];
+					[msg appendString:@"auto-detected DTD"];
 				}
 				break;
 			case XMLValidationTypeXSD:
 				if ([schemaFilename length]) {
 					[msg appendFormat:@"user-specified XML Schema: <tt>%@</tt>", schemaFilename];
 				} else {
-					[msg appendString:@"internally referenced XML Schema"];
+					[msg appendString:@"auto-detected XML Schema"];
 				}
 				break;
 			case XMLValidationTypeRNG:
