@@ -115,7 +115,7 @@ static NSString * const PrefsFileExt				= @"plist";
 	NSMutableArray *items		= [NSMutableArray arrayWithArray:[d objectForKey:CatalogItemsKey]];
 	//NSString *windowFrameString = [d objectForKey:WindowFrameStringKey];
 	
-	[self setPreferedCatalogItemType:1];
+	[self setPreferedCatalogItemType:XML_CATA_PREFER_PUBLIC];
 	[self setCatalogItems:items];
 	//[[self window] setFrameFromString:windowFrameString];
 }
