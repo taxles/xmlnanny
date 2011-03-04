@@ -52,9 +52,9 @@ static const char * const typeNames[] = {
 
 - (void)setPrefer:(int)n;
 {
-	NSLog(@"setting prefer: %d", n);
+	//NSLog(@"setting prefer: %d", n);
 	@synchronized(self) {
-		xmlCatalogSetDefaultPrefer(1);
+		xmlCatalogSetDefaultPrefer(XML_CATA_PREFER_PUBLIC);
 	}
 }
 
