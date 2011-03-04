@@ -804,7 +804,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/lib/libxml2-2.7.8/macosx/build/Release\"",
 					"\"$(SRCROOT)/lib\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
