@@ -119,6 +119,7 @@ typedef enum {
 	[self makeTextViewScrollHorizontally:sourceXMLTextView
 						withinScrollView:sourceXMLScrollView];
 	[self setSchemaURLComboBoxPlaceHolderString];
+	[self changeSizeForSettings];
 
 	if (!command) {
 		[self setCommand:[[[XMLParseCommand alloc] init] autorelease]];
