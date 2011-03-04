@@ -1,6 +1,6 @@
 <addressBook>
   <card>
-    <nae>John Smith</name>
+    <name>John Smith</name>
     <email>js@example.com</email>
   </card>
   <card>
