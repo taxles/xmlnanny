@@ -11,6 +11,8 @@
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		D3998BB31320942400DA78E7 /* libxml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4A37013208A3100FAE857 /* libxml.framework */; };
+		D3998BB41320942600DA78E7 /* libxml.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4A37013208A3100FAE857 /* libxml.framework */; };
 		D3A4A0CE1320897700FAE857 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A0A11320897700FAE857 /* PrefController.m */; };
 		D3A4A0CF1320897700FAE857 /* CatalogController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A0A31320897700FAE857 /* CatalogController.m */; };
 		D3A4A0D01320897700FAE857 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A0A51320897700FAE857 /* MyController.m */; };
@@ -69,11 +71,9 @@
 		D3A4A14113208A0F00FAE857 /* success-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A4A12F13208A0F00FAE857 /* success-icon.png */; };
 		D3A4A14213208A0F00FAE857 /* warning-icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A4A13013208A0F00FAE857 /* warning-icon-small.png */; };
 		D3A4A14313208A0F00FAE857 /* warning-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A4A13113208A0F00FAE857 /* warning-icon.png */; };
-		D3A4A37413208A3100FAE857 /* libxml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4A37013208A3100FAE857 /* libxml.framework */; };
 		D3A4A37513208A3100FAE857 /* libexslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4A37113208A3100FAE857 /* libexslt.dylib */; };
 		D3A4A37613208A3100FAE857 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4A37213208A3100FAE857 /* libxslt.dylib */; };
 		D3A4A37713208A3100FAE857 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4A37313208A3100FAE857 /* WebKit.framework */; };
-		D3A4A37913208A5C00FAE857 /* libxml.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4A37013208A3100FAE857 /* libxml.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,7 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D3A4A37913208A5C00FAE857 /* libxml.framework in Copy Frameworks */,
+				D3998BB41320942600DA78E7 /* libxml.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +100,7 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* XMLNanny-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLNanny-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* XML Nanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML Nanny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3998BA5132093D800DA78E7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		D3A4A0A01320897700FAE857 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
 		D3A4A0A11320897700FAE857 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
 		D3A4A0A21320897700FAE857 /* CatalogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogController.h; sourceTree = "<group>"; };
@@ -194,8 +195,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3998BB31320942400DA78E7 /* libxml.framework in Frameworks */,
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-				D3A4A37413208A3100FAE857 /* libxml.framework in Frameworks */,
 				D3A4A37513208A3100FAE857 /* libexslt.dylib in Frameworks */,
 				D3A4A37613208A3100FAE857 /* libxslt.dylib in Frameworks */,
 				D3A4A37713208A3100FAE857 /* WebKit.framework in Frameworks */,
@@ -208,6 +209,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3998BA5132093D800DA78E7 /* libxml2.dylib */,
 				D3A4A37013208A3100FAE857 /* libxml.framework */,
 				D3A4A37113208A3100FAE857 /* libexslt.dylib */,
 				D3A4A37213208A3100FAE857 /* libxslt.dylib */,
