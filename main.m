@@ -1,9 +1,9 @@
 //
 //  main.m
-//  XML Nanny
+//  XMLNanny
 //
-//  Created by Todd Ditchendorf on 1/12/07.
-//  Copyright Todd Ditchendorf 2007 . All rights reserved.
+//  Created by Todd Ditchendorf on 3/3/11.
+//  Copyright 2011 Todd Ditchendorf. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
