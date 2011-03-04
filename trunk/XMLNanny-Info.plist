@@ -14,7 +14,7 @@
 			<key>CFBundleTypeIconFile</key>
 			<string>xmlnannydoc</string>
 			<key>CFBundleTypeName</key>
-			<string>DocumentType</string>
+			<string>XML Nanny Document</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>????</string>
