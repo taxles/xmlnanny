@@ -15,11 +15,12 @@
 		D34164FC0B5964D800914C87 /* CatalogController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34164FB0B5964D800914C87 /* CatalogController.m */; };
 		D341690D0B59D40D00914C87 /* openBBEditDoc.txt in Resources */ = {isa = PBXBuildFile; fileRef = D341690B0B59D40D00914C87 /* openBBEditDoc.txt */; };
 		D341690E0B59D40D00914C87 /* openBBEditDocAtLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = D341690C0B59D40D00914C87 /* openBBEditDocAtLine.txt */; };
+		D3750699132085BB0073819F /* libxml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3750698132085BB0073819F /* libxml.framework */; };
+		D37506D1132085BF0073819F /* libxml.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D3750698132085BB0073819F /* libxml.framework */; };
 		D38D45730B669B01009A1E3F /* openSubEthaEditDocAtLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = D38D45720B669B01009A1E3F /* openSubEthaEditDocAtLine.txt */; };
 		D3AA2812132073D500B8D75C /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AA2810132073D500B8D75C /* iTunesArtwork.png */; };
 		D3AA2813132073D500B8D75C /* xmlnanny.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3AA2811132073D500B8D75C /* xmlnanny.icns */; };
 		D3AA281F132074AC00B8D75C /* xmlnannydoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3AA281E132074AC00B8D75C /* xmlnannydoc.icns */; };
-		D3B65AC10D381833005060A1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B65AC00D381833005060A1 /* libxml2.dylib */; };
 		D3B65C0C0D38185C005060A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B65C0B0D38185C005060A1 /* Cocoa.framework */; };
 		D3D0C41D131F693F00905509 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C41B131F693E00905509 /* MainMenu.xib */; };
 		D3D0C421131F695900905509 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C41F131F695900905509 /* MyDocument.xib */; };
@@ -67,6 +68,20 @@
 		D3EF2D170B58BD0F005FA184 /* schematron.dtd in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2D120B58BD0F005FA184 /* schematron.dtd */; };
 		D3EF2D180B58BD0F005FA184 /* skeleton-1.5.xsl in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2D130B58BD0F005FA184 /* skeleton-1.5.xsl */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D37505FB132083340073819F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D37506D1132085BF0073819F /* libxml.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -150,11 +165,11 @@
 		D34164FB0B5964D800914C87 /* CatalogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogController.m; sourceTree = "<group>"; };
 		D341690B0B59D40D00914C87 /* openBBEditDoc.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = openBBEditDoc.txt; sourceTree = "<group>"; };
 		D341690C0B59D40D00914C87 /* openBBEditDocAtLine.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = openBBEditDocAtLine.txt; sourceTree = "<group>"; };
+		D3750698132085BB0073819F /* libxml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libxml.framework; path = lib/libxml.framework; sourceTree = "<group>"; };
 		D38D45720B669B01009A1E3F /* openSubEthaEditDocAtLine.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openSubEthaEditDocAtLine.txt; sourceTree = "<group>"; };
 		D3AA2810132073D500B8D75C /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		D3AA2811132073D500B8D75C /* xmlnanny.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = xmlnanny.icns; sourceTree = "<group>"; };
 		D3AA281E132074AC00B8D75C /* xmlnannydoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = xmlnannydoc.icns; sourceTree = "<group>"; };
-		D3B65AC00D381833005060A1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		D3B65C0B0D38185C005060A1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		D3D0C41C131F693E00905509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D3D0C420131F695900905509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyDocument.xib; sourceTree = "<group>"; };
@@ -240,8 +255,8 @@
 				D3EF2BE10B58BA8F005FA184 /* libexslt.dylib in Frameworks */,
 				D3EF2BE30B58BA93005FA184 /* libxslt.dylib in Frameworks */,
 				D3EF2C600B58BB28005FA184 /* WebKit.framework in Frameworks */,
-				D3B65AC10D381833005060A1 /* libxml2.dylib in Frameworks */,
 				D3B65C0C0D38185C005060A1 /* Cocoa.framework in Frameworks */,
+				D3750699132085BB0073819F /* libxml.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,20 +266,13 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3EF2C5F0B58BB28005FA184 /* WebKit.framework */,
+				D3750698132085BB0073819F /* libxml.framework */,
 				D3EF2BE00B58BA8F005FA184 /* libexslt.dylib */,
 				D3EF2BE20B58BA93005FA184 /* libxslt.dylib */,
-				D3B65AC00D381833005060A1 /* libxml2.dylib */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
+				D3EF2C5F0B58BB28005FA184 /* WebKit.framework */,
 				D3B65C0B0D38185C005060A1 /* Cocoa.framework */,
 			);
-			name = "Other Frameworks";
+			name = "Linked Frameworks";
 			sourceTree = "<group>";
 		};
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
@@ -278,7 +286,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* XML Nanny */ = {
 			isa = PBXGroup;
 			children = (
-				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4ABFDCFA73011CA2CEA /* Source */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
@@ -287,7 +295,7 @@
 			name = "XML Nanny";
 			sourceTree = "<group>";
 		};
-		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+		2A37F4ABFDCFA73011CA2CEA /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				D3EF2B550B58B599005FA184 /* App */,
@@ -295,7 +303,7 @@
 				D3EF2B640B58B599005FA184 /* Parse */,
 				D3EF2B520B58B599005FA184 /* AGRegex */,
 			);
-			name = Classes;
+			name = Source;
 			sourceTree = "<group>";
 		};
 		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
@@ -329,7 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
-				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -594,8 +601,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "XML Nanny" */;
 			buildPhases = (
-				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				D37505FB132083340073819F /* Copy Frameworks */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
 			);
 			buildRules = (
@@ -763,6 +771,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/libxml2-2.7.8/macosx/build/Release\"",
+					"\"$(SRCROOT)/lib\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -789,6 +802,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/libxml2-2.7.8/macosx/build/Release\"",
+					"\"$(SRCROOT)/lib\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = unsupported;
