@@ -78,6 +78,7 @@ typedef enum {
 - (void)errorItemClicked:(float)line filename:(NSString *)filename;
 - (void)selectTextInExternalEditor:(NSArray *)args;
 - (void)selectTextInBBEditFile:(NSString *)filename line:(int)line;
+- (void)selectTextInTextWranglerFile:(NSString *)filename line:(int)line;
 - (void)selectTextInSubEthaEditFile:(NSString *)filename line:(int)line;
 - (void)selectTextInTextMateFile:(NSString *)filename line:(int)line;
 - (void)selectTextInTextEditFile:(NSString *)filename line:(int)line;
@@ -536,6 +537,8 @@ typedef enum {
 	
 	if (NSNotFound != [externalEditor rangeOfString:@"BBEdit"].location) {
 		[self selectTextInBBEditFile:filename line:line];
+    } else if (NSNotFound != [externalEditor rangeOfString:@"TextWrangler"].location) {
+        [self selectTextInTextWranglerFile:filename line:line];
 	} else if (NSNotFound != [externalEditor rangeOfString:@"TextMate"].location) {
 		[self selectTextInTextMateFile:filename line:line];
 	} else if (NSNotFound != [externalEditor rangeOfString:@"SubEthaEdit"].location) {
@@ -551,6 +554,17 @@ typedef enum {
 - (void)selectTextInBBEditFile:(NSString *)filename line:(int)line;
 {
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"openBBEditDocAtLine" ofType:@"txt"];
+	NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+	NSString *source = [NSString stringWithFormat:format, filename, line];
+	
+	NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:source] autorelease];
+	[script executeAndReturnError:nil];
+}
+
+
+- (void)selectTextInTextWranglerFile:(NSString *)filename line:(int)line;
+{
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"openTextWranglerDocAtLine" ofType:@"txt"];
 	NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 	NSString *source = [NSString stringWithFormat:format, filename, line];
 	

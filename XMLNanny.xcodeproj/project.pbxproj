@@ -57,6 +57,7 @@
 		D3998F471320CED400DA78E7 /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = D3998F191320CED400DA78E7 /* xmlwriter.c */; };
 		D3998F481320CED400DA78E7 /* xpath.c in Sources */ = {isa = PBXBuildFile; fileRef = D3998F1A1320CED400DA78E7 /* xpath.c */; };
 		D3998F491320CED400DA78E7 /* xpointer.c in Sources */ = {isa = PBXBuildFile; fileRef = D3998F1B1320CED400DA78E7 /* xpointer.c */; };
+		D3998FFF13214FC400DA78E7 /* openTextWranglerDocAtLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3998FFE13214FC400DA78E7 /* openTextWranglerDocAtLine.txt */; };
 		D3A4A0CE1320897700FAE857 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A0A11320897700FAE857 /* PrefController.m */; };
 		D3A4A0CF1320897700FAE857 /* CatalogController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A0A31320897700FAE857 /* CatalogController.m */; };
 		D3A4A0D01320897700FAE857 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A0A51320897700FAE857 /* MyController.m */; };
@@ -189,6 +190,7 @@
 		D3998F191320CED400DA78E7 /* xmlwriter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xmlwriter.c; path = "lib/libxml2-2.7.8/xmlwriter.c"; sourceTree = "<group>"; };
 		D3998F1A1320CED400DA78E7 /* xpath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xpath.c; path = "lib/libxml2-2.7.8/xpath.c"; sourceTree = "<group>"; };
 		D3998F1B1320CED400DA78E7 /* xpointer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xpointer.c; path = "lib/libxml2-2.7.8/xpointer.c"; sourceTree = "<group>"; };
+		D3998FFE13214FC400DA78E7 /* openTextWranglerDocAtLine.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openTextWranglerDocAtLine.txt; sourceTree = "<group>"; };
 		D3A4A0A01320897700FAE857 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
 		D3A4A0A11320897700FAE857 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
 		D3A4A0A21320897700FAE857 /* CatalogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogController.h; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 			children = (
 				D3A4A107132089FB00FAE857 /* openBBEditDoc.txt */,
 				D3A4A108132089FB00FAE857 /* openBBEditDocAtLine.txt */,
+				D3998FFE13214FC400DA78E7 /* openTextWranglerDocAtLine.txt */,
 				D3A4A109132089FB00FAE857 /* openSubEthaEditDocAtLine.txt */,
 			);
 			name = Scripts;
@@ -687,6 +690,7 @@
 				D3A4A14113208A0F00FAE857 /* success-icon.png in Resources */,
 				D3A4A14213208A0F00FAE857 /* warning-icon-small.png in Resources */,
 				D3A4A14313208A0F00FAE857 /* warning-icon.png in Resources */,
+				D3998FFF13214FC400DA78E7 /* openTextWranglerDocAtLine.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
