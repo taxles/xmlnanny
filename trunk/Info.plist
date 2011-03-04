@@ -12,7 +12,7 @@
 				<string>nanny</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string>file</string>
+			<string>xmlnannydoc</string>
 			<key>CFBundleTypeName</key>
 			<string>DocumentType</string>
 			<key>CFBundleTypeOSTypes</key>
