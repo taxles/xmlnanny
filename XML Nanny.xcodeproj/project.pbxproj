@@ -771,9 +771,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(LIBXML_PREFIX)",
-					"$(LIBXSLT_PREFIX)",
-					"$(LIBEXSLT_PREFIX)",
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include/libxml2/,
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include/,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -797,9 +796,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(LIBXML_PREFIX)",
-					"$(LIBXSLT_PREFIX)",
-					"$(LIBEXSLT_PREFIX)",
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include/libxml2/,
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include/,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
