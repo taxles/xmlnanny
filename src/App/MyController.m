@@ -554,7 +554,7 @@ typedef enum {
 	NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 	NSString *source = [NSString stringWithFormat:format, filename, line];
 	
-	NSAppleScript *script = [[NSAppleScript alloc] initWithSource:source];
+	NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:source] autorelease];
 	[script executeAndReturnError:nil];
 	[script release];
 }
@@ -566,9 +566,8 @@ typedef enum {
 	NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 	NSString *source = [NSString stringWithFormat:format, filename, line];
 	
-	NSAppleScript *script = [[NSAppleScript alloc] initWithSource:source];
+	NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:source] autorelease];
 	[script executeAndReturnError:nil];
-	[script release];
 }
 
 
@@ -597,7 +596,7 @@ typedef enum {
         [NSTask launchedTaskWithLaunchPath:@"/usr/bin/open"
                                  arguments:[args componentsSeparatedByString:@" "]];
     } else {
-        [[NSWorkspace sharedWorkspace] openURL:[NSURL fileURLWithPath:filename]];
+        [[NSWorkspace sharedWorkspace] openFile:filename];
     }
 }
 
