@@ -556,7 +556,6 @@ typedef enum {
 	
 	NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:source] autorelease];
 	[script executeAndReturnError:nil];
-	[script release];
 }
 
 
