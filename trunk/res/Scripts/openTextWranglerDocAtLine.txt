@@ -1,0 +1,7 @@
+tell application "TextWrangler"
+	activate
+	open {POSIX file "%@"} with LF translation
+	tell window 1
+		select line %d
+	end tell
+end tell
