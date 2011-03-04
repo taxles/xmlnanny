@@ -586,17 +586,29 @@ typedef enum {
 
 - (void)selectTextInTextMateFile:(NSString *)filename line:(int)line;
 {
-	NSString *args = [NSString stringWithFormat:@"-l %d %@", line, filename];
-	[NSTask launchedTaskWithLaunchPath:@"/usr/local/bin/mate"
-							 arguments:[args componentsSeparatedByString:@" "]];
+    if (![filename length]) {
+        return;
+    }
+    
+    NSString *argStr = [NSString stringWithFormat:@"-l %d", line];
+    NSMutableArray *args = [[[argStr componentsSeparatedByString:@" "] mutableCopy] autorelease];
+    [args addObject:filename];
+
+    @try {
+        [NSTask launchedTaskWithLaunchPath:@"mate" arguments:args];
+    }
+    @catch (NSException * e) {
+        [self selectTextInUknownEditor:filename line:line];
+    }
+    
+    //    /usr/local/bin/mate -l 3 /Users/itod/work/xmlnanny/trunk/res/examples/addrbook.xml
 }
 
 
 - (void)selectTextInTextEditFile:(NSString *)filename line:(int)line;
 {
-	NSString *args = [NSString stringWithFormat:@"-e %@", filename];
-	[NSTask launchedTaskWithLaunchPath:@"/usr/bin/open"
-							 arguments:[args componentsSeparatedByString:@" "]];
+    NSMutableArray *args = [NSArray arrayWithObjects:@"-e", filename, nil];    
+    [NSTask launchedTaskWithLaunchPath:@"/usr/bin/open" arguments:args];
 }
 
 
@@ -605,9 +617,11 @@ typedef enum {
 	NSString *externalEditor = [[NSUserDefaults standardUserDefaults] objectForKey:XNExternalEditorKey];
 
     if ([externalEditor length]) {
-        NSString *args = [NSString stringWithFormat:@"-a %@ %@", externalEditor, filename];
-        [NSTask launchedTaskWithLaunchPath:@"/usr/bin/open"
-                                 arguments:[args componentsSeparatedByString:@" "]];
+        NSString *argStr = [NSString stringWithFormat:@"-a %@", externalEditor];
+        NSMutableArray *args = [[[argStr componentsSeparatedByString:@" "] mutableCopy] autorelease];
+        [args addObject:filename];
+
+        [NSTask launchedTaskWithLaunchPath:@"/usr/bin/open" arguments:args];
     } else {
         [[NSWorkspace sharedWorkspace] openFile:filename];
     }
