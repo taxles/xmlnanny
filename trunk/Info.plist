@@ -28,7 +28,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>appl</string>
+	<string>xmlnanny</string>
 	<key>CFBundleIdentifier</key>
 	<string>nu.tod.XMLNanny</string>
 	<key>CFBundleInfoDictionaryVersion</key>

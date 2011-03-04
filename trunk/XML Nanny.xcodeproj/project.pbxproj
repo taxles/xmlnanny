@@ -16,6 +16,8 @@
 		D341690D0B59D40D00914C87 /* openBBEditDoc.txt in Resources */ = {isa = PBXBuildFile; fileRef = D341690B0B59D40D00914C87 /* openBBEditDoc.txt */; };
 		D341690E0B59D40D00914C87 /* openBBEditDocAtLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = D341690C0B59D40D00914C87 /* openBBEditDocAtLine.txt */; };
 		D38D45730B669B01009A1E3F /* openSubEthaEditDocAtLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = D38D45720B669B01009A1E3F /* openSubEthaEditDocAtLine.txt */; };
+		D3AA2812132073D500B8D75C /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AA2810132073D500B8D75C /* iTunesArtwork.png */; };
+		D3AA2813132073D500B8D75C /* xmlnanny.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3AA2811132073D500B8D75C /* xmlnanny.icns */; };
 		D3B65AC10D381833005060A1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B65AC00D381833005060A1 /* libxml2.dylib */; };
 		D3B65C0C0D38185C005060A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B65C0B0D38185C005060A1 /* Cocoa.framework */; };
 		D3D0C41D131F693F00905509 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C41B131F693E00905509 /* MainMenu.xib */; };
@@ -58,7 +60,6 @@
 		D3EF2D060B58BCE7005FA184 /* success-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2CF40B58BCE7005FA184 /* success-icon.png */; };
 		D3EF2D070B58BCE7005FA184 /* warning-icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2CF50B58BCE7005FA184 /* warning-icon-small.png */; };
 		D3EF2D080B58BCE7005FA184 /* warning-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2CF60B58BCE7005FA184 /* warning-icon.png */; };
-		D3EF2D0C0B58BCF0005FA184 /* appl.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2D0A0B58BCF0005FA184 /* appl.icns */; };
 		D3EF2D0D0B58BCF0005FA184 /* file.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2D0B0B58BCF0005FA184 /* file.icns */; };
 		D3EF2D140B58BD0F005FA184 /* emptyCatalog.xml in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2D0F0B58BD0F005FA184 /* emptyCatalog.xml */; };
 		D3EF2D150B58BD0F005FA184 /* results.html in Resources */ = {isa = PBXBuildFile; fileRef = D3EF2D100B58BD0F005FA184 /* results.html */; };
@@ -150,6 +151,8 @@
 		D341690B0B59D40D00914C87 /* openBBEditDoc.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = openBBEditDoc.txt; sourceTree = "<group>"; };
 		D341690C0B59D40D00914C87 /* openBBEditDocAtLine.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = openBBEditDocAtLine.txt; sourceTree = "<group>"; };
 		D38D45720B669B01009A1E3F /* openSubEthaEditDocAtLine.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openSubEthaEditDocAtLine.txt; sourceTree = "<group>"; };
+		D3AA2810132073D500B8D75C /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		D3AA2811132073D500B8D75C /* xmlnanny.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = xmlnanny.icns; sourceTree = "<group>"; };
 		D3B65AC00D381833005060A1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		D3B65C0B0D38185C005060A1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		D3D0C41C131F693E00905509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -221,7 +224,6 @@
 		D3EF2CF40B58BCE7005FA184 /* success-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon.png"; sourceTree = "<group>"; };
 		D3EF2CF50B58BCE7005FA184 /* warning-icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-small.png"; sourceTree = "<group>"; };
 		D3EF2CF60B58BCE7005FA184 /* warning-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon.png"; sourceTree = "<group>"; };
-		D3EF2D0A0B58BCF0005FA184 /* appl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = appl.icns; sourceTree = "<group>"; };
 		D3EF2D0B0B58BCF0005FA184 /* file.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = file.icns; sourceTree = "<group>"; };
 		D3EF2D0F0B58BD0F005FA184 /* emptyCatalog.xml */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = emptyCatalog.xml; sourceTree = "<group>"; };
 		D3EF2D100B58BD0F005FA184 /* results.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = results.html; sourceTree = "<group>"; };
@@ -541,7 +543,8 @@
 		D3EF2D090B58BCF0005FA184 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				D3EF2D0A0B58BCF0005FA184 /* appl.icns */,
+				D3AA2810132073D500B8D75C /* iTunesArtwork.png */,
+				D3AA2811132073D500B8D75C /* xmlnanny.icns */,
 				D3EF2D0B0B58BCF0005FA184 /* file.icns */,
 			);
 			name = Icons;
@@ -634,7 +637,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EF2D0C0B58BCF0005FA184 /* appl.icns in Resources */,
 				D3EF2D0D0B58BCF0005FA184 /* file.icns in Resources */,
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
@@ -661,6 +663,8 @@
 				D3D0C421131F695900905509 /* MyDocument.xib in Resources */,
 				D3D0C425131F696E00905509 /* PrefWindow.xib in Resources */,
 				D3D0C429131F697D00905509 /* CatalogWindow.xib in Resources */,
+				D3AA2812132073D500B8D75C /* iTunesArtwork.png in Resources */,
+				D3AA2813132073D500B8D75C /* xmlnanny.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
