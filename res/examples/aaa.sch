@@ -7,18 +7,4 @@
                <report test="@name">AAA contains attribute name.</report> 
           </rule> 
      </pattern> 
-<!--
-     <pattern name="Print positive result only"> 
-          <rule context="AAA"> 
-               <report test="BBB">BBB element is present.</report> 
-               <report test="@name">AAA contains attribute name.</report> 
-          </rule> 
-     </pattern> 
-     <pattern name="Print negative result only"> 
-          <rule context="AAA"> 
-               <assert test="BBB">BBB element is missing.</assert> 
-               <assert test="@name">AAA misses attribute name.</assert> 
-          </rule> 
-     </pattern> 
--->
 </schema>
