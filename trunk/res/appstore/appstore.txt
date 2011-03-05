@@ -1,0 +1,27 @@
+XML Nanny is a Developer Tool that allows you to Validate XML and XHTML documents locally or over the web.
+
+FEATURES:
+
+• Parse either local XML files or files on a web server using HTTP. In the "Source" text field specify either a local file path or an HTTP URL.
+
+• Checks for XML Well-Formedness errors. Errors are reported in an attractive graphical list.
+
+• Checks for XML Validation errors, with support for many popular Schema Validation types: DTD (internal or external), XML Schema (XSD), RELAX NG (XML syntax only), and Schematron. Validation errors are reported in an attractive graphical list.
+
+• Schematron 1.5 Support. Validate XML documents against Schematron schemas with assertions, reports, pattern tests, and diagnostic information reported through the XML Nanny UI.
+
+• Verbose Parsing mode provides more instance document/DTD details through the UI... kinda like a visual SAX parser.
+
+• Each XML Nanny window is a Mac OS X "Document" which may be saved as a ".xmlnanny" file and reopened later. Set up an XML Nanny window with your parse settings and save them to disk for later use.
+
+• Double-clicking errors in XML Nanny's results list UI opens the source document in your preferred Text Editor (this can be set in the Preferences Window). Some Text Editors (TextMate, BBEdit, TextWrangler) will even highlight the line in which the error occurs.
+
+Mime-type and encoding values sent to XML Nanny from a web server via HTTP headers are now reported.
+
+• XML Namespace setting allows you to parse with namespaces on or off.
+
+• Full-Constraint Check setting for XSD parsing.
+
+• XML Catalog support. In the main menu select "Window → Show XML Catalog Window". In the window that appears you can specify local custom DTDs via PUBLIC or SYSTEM identifiers. These DTDs will then override matching DTDs specified in XML documents in all subsequent Validation.
+
+• All Parsing and Validation is done libxml2 except for Schematron, which is partially handled by the Schematron 1.5 XSLT reference implementation.
