@@ -351,15 +351,15 @@ static void *texmlmateModuleShutdown(xsltTransformContextPtr ctxt,
 	
 	NSDate *start = [NSDate date];
 	
-	schematron = xmlParseFile([schemaURLString UTF8String]);
+	schematron = xmlParseFile([[command safeSchemaURLString] UTF8String]);
 	
 	if (!schematron) {
 		goto leave;
 	}
 	
 	const char *params[] = {
-		"sourceURLString", [sourceURLString UTF8String],
-		"schemaURLString", [schemaURLString UTF8String],
+		"sourceURLString", [[command safeSourceURLString] UTF8String],
+		"schemaURLString", [[command safeSchemaURLString] UTF8String],
 		NULL
 	};
 
@@ -386,7 +386,7 @@ static void *texmlmateModuleShutdown(xsltTransformContextPtr ctxt,
 	
 	start = [NSDate date];
 	
-	docPtr = xmlReadFile([sourceURLString UTF8String], NULL, [self optionsForCommand:command]);
+	docPtr = xmlReadFile([[command safeSourceURLString] UTF8String], NULL, [self optionsForCommand:command]);
 	//docPtr = xmlReadMemory([sourceXMLData bytes], 
 	//					   [sourceXMLData length], 
 	//					   [sourceURLString UTF8String],

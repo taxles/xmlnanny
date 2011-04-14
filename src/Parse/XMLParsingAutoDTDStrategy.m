@@ -40,7 +40,7 @@
 
 		start = [NSDate date];
  
-		docPtr = xmlReadFile([sourceURLString UTF8String], NULL, [self optionsForCommand:command]);
+		docPtr = xmlReadFile([[command safeSourceURLString] UTF8String], NULL, [self optionsForCommand:command]);
 		//docPtr = xmlReadMemory([sourceXMLData bytes], 
 		//					   [sourceXMLData length], 
 		//					   [sourceURLString UTF8String],
@@ -57,7 +57,7 @@
 		
 		opts = (XML_PARSE_DTDVALID|opts);
 		
-		xmlReadDoc(buffer, [sourceURLString UTF8String], "utf-8", opts);
+		xmlReadDoc(buffer, [[command safeSourceURLString] UTF8String], "utf-8", opts);
 
 	} else {
 		

@@ -25,6 +25,9 @@
 	BOOL processXIncludes;
 }
 
+- (NSString *)safeSourceURLString;
+- (NSString *)safeSchemaURLString;
+
 // Accessors
 - (NSString *)sourceURLString;
 - (void)setSourceURLString:(NSString *)newString;

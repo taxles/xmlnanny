@@ -34,7 +34,7 @@
 	
 	NSDate *start = [NSDate date];
 	
-	parserCtxt = xmlRelaxNGNewParserCtxt([schemaURLString UTF8String]);
+	parserCtxt = xmlRelaxNGNewParserCtxt([[command safeSchemaURLString] UTF8String]);
 	
 	if (!parserCtxt) {
 		goto leave;
@@ -62,7 +62,7 @@
 	
 	start = [NSDate date];
 	
-	docPtr = xmlReadFile([sourceURLString UTF8String], NULL, [self optionsForCommand:command]);
+	docPtr = xmlReadFile([[command safeSourceURLString] UTF8String], NULL, [self optionsForCommand:command]);
 	//docPtr = xmlReadMemory([sourceXMLData bytes], 
 	//					   [sourceXMLData length], 
 	//					   [sourceURLString UTF8String],

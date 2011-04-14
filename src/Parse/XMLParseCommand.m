@@ -82,6 +82,16 @@
 #pragma mark -
 #pragma mark Accessors
 
+- (NSString *)safeSourceURLString {
+    return [[[[self sourceURLString] stringByStandardizingPath] stringByExpandingTildeInPath] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
+
+- (NSString *)safeSchemaURLString {
+    return [[[[self schemaURLString] stringByStandardizingPath] stringByExpandingTildeInPath] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
+
 - (NSString *)sourceURLString;
 {
 	return sourceURLString;
