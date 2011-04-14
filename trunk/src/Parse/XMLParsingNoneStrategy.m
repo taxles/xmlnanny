@@ -32,7 +32,7 @@
 	
 	NSDate *start = [NSDate date];
 	
-	const char *URL = [sourceURLString UTF8String];
+	const char *URL = [[command safeSourceURLString] UTF8String];
 	int opts = [self optionsForCommand:command];
     
 	docPtr = xmlReadFile(URL, NULL, opts);

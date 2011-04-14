@@ -38,7 +38,7 @@
 	
 	NSDate *start = [NSDate date];
 	
-	dtdPtr = xmlParseDTD(NULL, [schemaURLString xmlChar]);
+	dtdPtr = xmlParseDTD(NULL, [[command safeSchemaURLString] xmlChar]);
 	
 	NSTimeInterval duration = [[NSDate date] timeIntervalSinceDate:start];
 	
@@ -54,7 +54,7 @@
 	
 	start = [NSDate date];
 	
-	docPtr = xmlReadFile([sourceURLString UTF8String], NULL, [self optionsForCommand:command]);
+	docPtr = xmlReadFile([[command safeSourceURLString] UTF8String], NULL, [self optionsForCommand:command]);
 	//docPtr = xmlReadMemory([sourceXMLData bytes], 
 	//					   [sourceXMLData length], 
 	//					   [sourceURLString UTF8String],
