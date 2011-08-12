@@ -450,10 +450,9 @@ static void myStructuredErrorAdapter(id self, xmlErrorPtr err)
     /*
      * Maintain the compatibility with the legacy error handling
      */
-    if (ctxt != NULL) {
+    if (ctxt != NULL && ctxt->inputNr > 0) {
         input = ctxt->input;
-        if ((input != NULL) && (input->filename == NULL) &&
-            (ctxt->inputNr > 1)) {
+        if ((ctxt->inputNr > 1) && (input != NULL) && (input->filename == NULL)) {
             cur = input;
             input = ctxt->inputTab[ctxt->inputNr - 2];
         }
