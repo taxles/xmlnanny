@@ -428,6 +428,7 @@ static void myStructuredErrorAdapter(id self, xmlErrorPtr err)
     xmlNodePtr node;
     xmlErrorLevel level;
     xmlParserInputPtr input = NULL;
+    BOOL hasValidInput = NO;
     xmlParserInputPtr cur = NULL;
 	
     if (err == NULL)
@@ -452,19 +453,20 @@ static void myStructuredErrorAdapter(id self, xmlErrorPtr err)
      */
     if (ctxt != NULL && ctxt->inputNr > 0) {
         input = ctxt->input;
-        if ((ctxt->inputNr > 1) && (input != NULL) && (input->filename == NULL)) {
+        if ((ctxt->inputNr > 1 && ctxt->inputNr <= ctxt->inputMax) && (input != NULL) && (input->filename == NULL)) {
             cur = input;
             input = ctxt->inputTab[ctxt->inputNr - 2];
         }
 
-        if (input != NULL && input->id >= 0 && input->id < 1000000) {
+        if (ctxt->inputNr <= ctxt->inputMax && input != NULL && input->id >= 0 && input->id < 1000000) {
 			// seems to be a libxml bug... somtimes a non-fully-initialized input obj
 			// will arrive here which can cause a crasher when accessing some of it's fields
 			// Luckily, you seem to be able to notice this case cuz although the input obj
 			// is non-null, it's id == 0 || > 1000000
 			//NSLog(@"input->id: %d", input->id);
 			
-			const char *filename = NULL;
+			hasValidInput = YES;
+            const char *filename = NULL;
             if (input->filename)
 				filename = input->filename;
             else if ((line != 0) && (domain == XML_FROM_PARSER))
@@ -612,7 +614,7 @@ static void myStructuredErrorAdapter(id self, xmlErrorPtr err)
 	//NSLog(@"gonna create contextStr!");
 	//NSLog(@"ctxt == NULL : %d", (ctxt == NULL));
 	
-    if (ctxt != NULL) {
+    if (ctxt != NULL && hasValidInput) {
         myParserPrintFileContext(input, contextStr);
         if (cur != NULL) {
             if (cur->filename)
