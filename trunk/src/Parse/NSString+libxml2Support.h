@@ -11,7 +11,7 @@
 
 @interface NSString (libxml2Support)
 + (id)stringWithXmlChar:(const xmlChar *)xc;
-- (xmlChar *)xmlChar;
+- (const xmlChar *)xmlChar;
 - (NSString *)stringByRemovingCurlyBraces;
 @end
 

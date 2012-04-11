@@ -169,7 +169,7 @@ static const xmlChar *getStringValueForAttr(xsltTransformContextPtr ctxt,
 }
 
 
-static const xmlChar *evalExprAgainstNode(xsltTransformContextPtr ctxt, xmlNodePtr inputNode, xmlChar *expr)
+static const xmlChar *evalExprAgainstNode(xsltTransformContextPtr ctxt, xmlNodePtr inputNode, const xmlChar *expr)
 {
 	//NSLog(@"inputNode->name: %s", inputNode->name);
 	
@@ -224,7 +224,7 @@ static void handleMessageFired(xsltTransformContextPtr ctxt,
 	// get subj which is string-value of inputNode's third child (t:subj), and eval
 	const xmlChar *subjExpr = evalExprAgainstNode(ctxt, sheetNode, (xmlChar *)"string(*[3])");
 	if (NULL != subjExpr) {
-		xmlChar *subjStrExpr = [[NSString stringWithFormat:@"string(%s)", subjExpr] xmlChar];
+		const xmlChar *subjStrExpr = [[NSString stringWithFormat:@"string(%s)", subjExpr] xmlChar];
 		const xmlChar *subj = evalExprAgainstNode(ctxt, inputNode, subjStrExpr);
 		if (NULL != subj) {
 			[info setObject:[NSString stringWithXmlChar:subj] forKey:XMLParseErrorSubjectKey];

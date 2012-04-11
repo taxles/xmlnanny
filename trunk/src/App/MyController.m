@@ -311,6 +311,9 @@ typedef enum {
 	NSString *str = nil;
 	
 	switch(type) {
+		case XMLValidationTypeNone:
+			str = @"";
+			break;
 		case XMLValidationTypeDTD:
 			str = NSLocalizedString(@"Auto-detect DTD", @"");
 			break;
@@ -434,6 +437,9 @@ typedef enum {
 	NSString *res = nil;
 	
 	switch ([command validationType]) {
+		case XMLValidationTypeNone:
+			res = @"";
+			break;
 		case XMLValidationTypeDTD:
 			res = @"DTD";
 			break;
@@ -475,12 +481,17 @@ typedef enum {
 
 - (void)playSoundNamed:(NSString *)name;
 {
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	BOOL playSounds = [[defaults objectForKey:XNPlaySoundsKey] boolValue];
-
-	if (playSounds) {
-		[[NSSound soundNamed:name] play];
-	}
+    @try {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        BOOL playSounds = [[defaults objectForKey:XNPlaySoundsKey] boolValue];
+        
+        if (playSounds) {
+            [[NSSound soundNamed:name] play];
+        }
+    }
+    @catch (NSException *exception) {
+        NSLog(@"couldn't play %@", name);
+    }
 }
 
 
@@ -674,6 +685,8 @@ typedef enum {
 	if (checkedValidity) {
 		msg = [NSMutableString stringWithFormat:@"Checking <tt>%@</tt> for validity against ", filename];
 		switch ([command validationType]) {
+			case XMLValidationTypeNone:
+			break;
 			case XMLValidationTypeDTD:
 				if ([schemaFilename length]) {
 					[msg appendFormat:@"user-specified DTD: <tt>%@</tt>", schemaFilename];
