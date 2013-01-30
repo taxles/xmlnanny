@@ -874,6 +874,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = XMLNanny_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/lib/libxml2-2.7.8/include//**",
 					/Developer/SDKs/MacOSX10.6.sdk/usr/include/libxml2/,

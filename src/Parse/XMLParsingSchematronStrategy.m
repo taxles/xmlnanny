@@ -210,19 +210,26 @@ static void handleMessageFired(xsltTransformContextPtr ctxt,
 	[info setObject:(isAssert ? @"Assert Failed" : @"Report") forKey:XMLParseErrorLevelStrKey];
 
 	// get message which is string-value of inputNode's first child (t:msg)
-	const xmlChar *msg = evalExprAgainstNode(ctxt, sheetNode, (xmlChar *)"string(*[1])");
+    xmlNodePtr child = sheetNode->children;
+    const xmlChar *msg = child->children->content;
+//	const xmlChar *msg = evalExprAgainstNode(ctxt, sheetNode, (xmlChar *)"*:msg//text()");
+//    assert(msg);
 	if (NULL != msg) {
 		[info setObject:[NSString stringWithXmlChar:msg] forKey:XMLParseErrorMessageKey];
 	}
 
 	// get message which is string-value of inputNode's second child (t:diag)
-	const xmlChar *diag = evalExprAgainstNode(ctxt, sheetNode, (xmlChar *)"string(*[2])");
+    child = child->next;
+    const xmlChar *diag = child->content;
+//	const xmlChar *diag = evalExprAgainstNode(ctxt, sheetNode, (xmlChar *)"*:diag//text()");
 	if (NULL != diag) {
 		[info setObject:[NSString stringWithXmlChar:diag] forKey:XMLParseErrorDiagnosticsKey];
 	}
 	
 	// get subj which is string-value of inputNode's third child (t:subj), and eval
-	const xmlChar *subjExpr = evalExprAgainstNode(ctxt, sheetNode, (xmlChar *)"string(*[3])");
+    child = child->next;
+    const xmlChar *subjExpr = child->content;
+//	const xmlChar *subjExpr = evalExprAgainstNode(ctxt, sheetNode, (xmlChar *)"*:subj//text()");
 	if (NULL != subjExpr) {
 		const xmlChar *subjStrExpr = [[NSString stringWithFormat:@"string(%s)", subjExpr] xmlChar];
 		const xmlChar *subj = evalExprAgainstNode(ctxt, inputNode, subjStrExpr);
