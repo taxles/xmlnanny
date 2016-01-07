@@ -1,0 +1,1 @@
+XML Nanny is a free Cocoa application for Mac OS X that allows you to parse and validate local or remote XML documents against DTD, W3C XML Schema, RELAX NG, and Schematron schemas.
